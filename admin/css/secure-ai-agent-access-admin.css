@@ -1,0 +1,287 @@
+.saia-dashboard-wrap {
+    margin-top: 20px;
+}
+
+.saia-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.saia-card h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.saia-quick-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.saia-session-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.saia-session-card.active {
+    border-left: 4px solid #00a32a;
+}
+
+.saia-session-card.inactive {
+    border-left: 4px solid #d63638;
+    opacity: 0.7;
+}
+
+.saia-session-status {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.saia-session-status.active {
+    color: #00a32a;
+}
+
+.saia-session-status.inactive {
+    color: #d63638;
+}
+
+.saia-session-details {
+    font-size: 14px;
+    color: #555;
+}
+
+.saia-session-actions {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.saia-link-masked {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 10px 0;
+    font-family: monospace;
+}
+
+.saia-link-revealed {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 3px;
+    display: block;
+    margin: 10px 0;
+    font-family: monospace;
+    word-break: break-all;
+}
+
+.saia-kill-switch-high {
+    background: #d63638 !important;
+    color: #fff !important;
+    padding: 4px 8px !important;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.saia-kill-switch-normal {
+    color: #d63638;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* High prominence style in admin bar */
+#wp-admin-bar-saia-kill-switch a {
+    background: #d63638 !important;
+    color: #fff !important;
+}
+
+#wp-admin-bar-saia-kill-switch:hover a {
+    background: #a02222 !important;
+}
+
+/* Standard style in admin bar - override the red background */
+#wp-admin-bar-saia-kill-switch.saia-standard-style a {
+    background: transparent !important;
+    color: #d63638 !important;
+}
+
+#wp-admin-bar-saia-kill-switch.saia-standard-style:hover a {
+    background: rgba(214, 54, 56, 0.1) !important;
+    color: #a02222 !important;
+}
+
+.saia-settings-section {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+}
+
+.saia-settings-section h3 {
+    margin-top: 0;
+}
+
+.saia-setting-row {
+    margin-bottom: 15px;
+}
+
+.saia-setting-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.saia-setting-description {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.saia-slider-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.saia-slider {
+    width: 300px;
+}
+
+.saia-slider-value {
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.saia-data-stats {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.saia-recent-links {
+    list-style: none;
+    padding: 0;
+}
+
+.saia-recent-links li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.saia-link-status {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.saia-link-status.used {
+    background: #72aee6;
+}
+
+.saia-link-status.unused {
+    background: #00a32a;
+}
+
+.saia-link-status.expired {
+    background: #d63638;
+}
+
+.saia-network-site-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.saia-network-site-card h4 {
+    margin-top: 0;
+    color: #23282d;
+}
+
+.saia-network-stats {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.saia-network-stat {
+    font-size: 14px;
+}
+
+.saia-copy-button {
+    margin-left: 10px;
+}
+
+.saia-notice {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.saia-notice.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.saia-notice.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.saia-notice.warning {
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+}
+
+.saia-mobile-responsive {
+    overflow-x: auto;
+}
+
+/* Copy button transitions */
+#saia-copy-link {
+    transition: all 0.3s ease;
+}
+
+#saia-copy-link.saia-copied {
+    background-color: #00a32a;
+    border-color: #00a32a;
+}
+
+#saia-copy-link.saia-copied:hover {
+    background-color: #00a32a;
+    border-color: #00a32a;
+}
+
+@media screen and (max-width: 782px) {
+    .saia-quick-actions {
+        flex-direction: column;
+    }
+    
+    .saia-session-actions {
+        position: static;
+        margin-top: 10px;
+    }
+    
+    .saia-slider-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .saia-slider {
+        width: 100%;
+    }
+}
